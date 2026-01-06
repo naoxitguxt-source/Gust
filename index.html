@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUX CHEATS | OFICIAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-black: #000000;
+            --card-dark: #111111;
+            --accent-red: #ff0000;
+            --whatsapp-green: #25d366;
+            --text-white: #ffffff;
+            --gray-text: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-black);
+            margin: 0; padding: 0; color: var(--text-white);
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        .banner { width: 100%; max-width: 500px; text-align: center; padding-top: 20px; }
+        .main-title { font-size: 28px; font-weight: bold; margin: 20px 0 5px 0; letter-spacing: 1px; }
+        .status-badge { background: #fff; color: #000; padding: 5px 15px; border-radius: 5px; font-weight: bold; font-size: 12px; margin-bottom: 20px; display: inline-block; }
+
+        .links-container { width: 90%; max-width: 450px; display: flex; flex-direction: column; gap: 12px; padding-bottom: 50px; }
+
+        .accordion-item { background-color: var(--card-dark); border: 1px solid #333; border-radius: 12px; overflow: hidden; transition: 0.3s; }
+        .product-header { padding: 15px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; }
+        .options-content { display: none; background-color: #0a0a0a; padding: 10px; border-top: 1px solid #222; flex-direction: column; gap: 10px; }
+
+        .sub-option { background: #1a1a1a; padding: 12px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; border: 1px solid transparent; transition: 0.2s; }
+        .sub-option:hover { border-color: var(--accent-red); }
+        .sub-option span { font-size: 13px; font-weight: bold; }
+        .sub-price { color: var(--whatsapp-green); font-weight: bold; }
+
+        .product-info { display: flex; align-items: center; gap: 15px; }
+        .product-icon { width: 45px; height: 45px; background: #222; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 20px; color: var(--accent-red); }
+        .product-name { font-weight: bold; font-size: 14px; text-transform: uppercase; }
+
+        .whatsapp-card { background: linear-gradient(90deg, #0f0f0f 0%, #1a1a1a 100%); border-radius: 15px; padding: 20px; display: flex; align-items: center; gap: 15px; border: 1px solid #25d36633; cursor: pointer; }
+        .wa-icon { font-size: 40px; color: var(--whatsapp-green); }
+        
+        .footer-info { text-align: center; margin-top: 20px; padding-bottom: 20px; }
+        .cnpj { font-size: 11px; color: var(--gray-text); margin-top: 10px; }
+
+        .show { display: flex !important; }
+        .rotate { transform: rotate(180deg); }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <h1 class="main-title">GUX CHEATS</h1>
+        <div class="status-badge">COMPRA SEGURA ✅</div>
+    </div>
+
+    <div class="links-container">
+        
+        <div class="accordion-item">
+            <div class="product-header" onclick="toggleMenu('u-options', 'u-seta')">
+                <div class="product-info">
+                    <div class="product-icon"><i class="fa-solid fa-gem"></i></div>
+                    <span class="product-name">AIMBOT VIP DO URIEL</span>
+                </div>
+                <i class="fa-solid fa-chevron-down" id="u-seta"></i>
+            </div>
+            <div id="u-options" class="options-content">
+                <div class="sub-option" onclick="comprar('AIMBOT URIEL PERMANENTE', '25,00')">
+                    <span>PERMANENTE</span>
+                    <span class="sub-price">R$ 25,00</span>
+                </div>
+                <div class="sub-option" onclick="comprar('AIMBOT URIEL TEMPORARIO', '15,00')">
+                    <span>TEMPORÁRIO</span>
+                    <span class="sub-price">R$ 15,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="product-header" onclick="toggleMenu('ff-options', 'ff-seta')">
+                <div class="product-info">
+                    <div class="product-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <span class="product-name">PAINEL FFH4X</span>
+                </div>
+                <i class="fa-solid fa-chevron-down" id="ff-seta"></i>
+            </div>
+            <div id="ff-options" class="options-content">
+                <div class="sub-option" onclick="comprar('FFH4X PERMANENTE', '20,00')">
+                    <span>PERMANENTE</span>
+                    <span class="sub-price">R$ 20,00</span>
+                </div>
+                <div class="sub-option" onclick="comprar('FFH4X TEMPORARIO', '10,00')">
+                    <span>TEMPORÁRIO</span>
+                    <span class="sub-price">R$ 10,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="product-header" onclick="toggleMenu('hs-options', 'hs-seta')">
+                <div class="product-info">
+                    <div class="product-icon"><i class="fa-solid fa-eye"></i></div>
+                    <span class="product-name">HS COM ESP ANDROID/IOS</span>
+                </div>
+                <i class="fa-solid fa-chevron-down" id="hs-seta"></i>
+            </div>
+            <div id="hs-options" class="options-content">
+                <div class="sub-option" onclick="comprar('HS ESP PERMANENTE', '30,00')">
+                    <span>PERMANENTE</span>
+                    <span class="sub-price">R$ 30,00</span>
+                </div>
+                <div class="sub-option" onclick="comprar('HS ESP TEMPORARIO', '15,00')">
+                    <span>TEMPORÁRIO</span>
+                    <span class="sub-price">R$ 15,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="whatsapp-card" onclick="irParaWhatsapp()">
+            <i class="fa-brands fa-whatsapp wa-icon"></i>
+            <div>
+                <h4 style="margin:0">GUX ZAP</h4>
+                <p style="margin:5px 0 0; font-size:12px; color:var(--gray-text)">DÚVIDAS? CHAME NO WHATSAPP!</p>
+            </div>
+        </div>
+
+        <div class="footer-info">
+            <div class="cnpj">H DIGITAL BRASIL®<br>57.020.826/0001-30</div>
+        </div>
+    </div>
+
+    <script>
+        // NÚMERO CORRIGIDO E SEM ESPAÇOS
+        const MEU_NUMERO = "5511948764366";
+
+        function toggleMenu(menuId, setaId) {
+            const content = document.getElementById(menuId);
+            const seta = document.getElementById(setaId);
+            content.classList.toggle('show');
+            seta.classList.toggle('rotate');
+        }
+
+        function comprar(nome, preco) {
+            const msg = encodeURIComponent("Olá GUX! Gostaria de comprar o " + nome + " por R$ " + preco);
+            const link = "https://api.whatsapp.com/send?phone=" + MEU_NUMERO + "&text=" + msg;
+            
+            // Força a abertura na janela principal para evitar o erro de "indisponível"
+            window.open(link, "_top");
+        }
+
+        function irParaWhatsapp() {
+            const link = "https://api.whatsapp.com/send?phone=" + MEU_NUMERO + "&text=Olá! Vim pelo site.";
+            window.open(link, "_top");
+        }
+    </script>
+</body>
+</html>
